@@ -19,7 +19,7 @@ public class Todo {
     private String taskName;
 
     @NotNull
-    @Size(min = 8)
+    @Size(min = 8, max=8)
     private String dueDate;
 
     @NotNull
