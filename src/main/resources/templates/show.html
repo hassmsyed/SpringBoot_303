@@ -6,10 +6,10 @@
 </head>
 <body>
 <a href="/">Show All Tasks</a><br />
-Task Name :<span th:text="${task.taskName}" ></span><br/>
-Due Date :<span th:text="${task.dueDate}" ></span><br/>
-Priority :<span th:text="${task.priority}" ></span><br/>
-<a th:href="@{/delete/{id}(id=${task.id})}">Delete this task
+Task Name :<span th:text="${todo.taskName}" ></span><br/>
+Due Date :<span th:text="${todo.dueDate}" ></span><br/>
+Priority :<span th:text="${todo.priority}" ></span><br/>
+<a th:href="@{/delete/{id}(id=${todo.id})}">Delete this task
 </a>
 </body>
 </html>

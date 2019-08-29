@@ -37,12 +37,12 @@ public class HomeControllerTODO {
     @RequestMapping("/detail/{id}")
     public String showTask(@PathVariable("id") long id, Model model)
     {
-        model.addAttribute("task", todoRepository.findById(id).get());
+        model.addAttribute("todo", todoRepository.findById(id).get());
         return "show";
     }
     @RequestMapping("/update/{id}")
     public String updateTask(@PathVariable("id") long id, Model model){
-        model.addAttribute("task", todoRepository.findById(id).get());
+        model.addAttribute("todo", todoRepository.findById(id).get());
         return "taskform";
     }
     @RequestMapping("/delete/{id}")
